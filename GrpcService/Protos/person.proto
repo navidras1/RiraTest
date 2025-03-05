@@ -1,0 +1,56 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+option csharp_namespace = "GrpcService";
+
+
+package personbuff;
+
+service PersonCrud{
+	rpc AddPerson (AddPersonRequestMessage) returns (AddPersonResponseMessage);
+	rpc GetAllPersons (Empty) returns (GetAllPersonResponseMessage);
+	rpc DeletePerson(DeletePersonRequestMessage) returns (GeneralRsponseMessage);
+	rpc UpdatePerson(PersonMessage) returns (GeneralRsponseMessage);
+}
+
+message Empty {}
+
+message DeletePersonRequestMessage{
+	int64 id = 1;
+}
+
+message AddPersonRequestMessage{
+	string first_name = 1;
+	string last_name = 2;
+	string nationla_code = 3;
+	int64 birth_date = 4;
+
+}
+
+message PersonMessage {
+	int64 id = 1	;
+	string first_name = 2;
+	string last_name = 3;
+	string nationla_code = 4;
+	int64 birth_date = 5;
+}
+
+message GetAllPersonResponseMessage{
+	bool is_success=1;
+	string message =2;
+	repeated string warnings = 3;
+	repeated PersonMessage persons = 4;
+}
+
+message AddPersonResponseMessage {
+	bool is_success=1;
+	string message =2;
+	repeated string warnings = 3;
+	uint64 id = 4;
+}
+
+message GeneralRsponseMessage{
+	bool is_success=1;
+	string message =2;
+	repeated string warnings = 3;
+}
+
