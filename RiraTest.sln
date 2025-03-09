@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{CB660F50-4EF7-4049-A9FF-0276DF90846A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcRiraClient", "GrpcRiraClient\GrpcRiraClient.csproj", "{7429F672-65D1-45D4-B47F-703C57A1082C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{CB660F50-4EF7-4049-A9FF-0276DF90846A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB660F50-4EF7-4049-A9FF-0276DF90846A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB660F50-4EF7-4049-A9FF-0276DF90846A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7429F672-65D1-45D4-B47F-703C57A1082C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7429F672-65D1-45D4-B47F-703C57A1082C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7429F672-65D1-45D4-B47F-703C57A1082C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7429F672-65D1-45D4-B47F-703C57A1082C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
